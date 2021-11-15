@@ -25,6 +25,12 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
+            .card {
+                margin-bottom: 100px;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                background-color: #0C2427;
+            }
 
             h2 {
                 width: fit-content;
@@ -34,10 +40,10 @@
 
             p {
                 font-size: 28px;
+                margin-bottom: 15px;
             }
 
             body {
-                background-color: #0C2427;
                 background-image: url("https://www.anzael.com/blog/wp-content/uploads/2018/02/car-parts-at-silverlake.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -46,25 +52,24 @@
 
             .main {
                 margin: 50px auto;
-                background-color: #0C2427;
                 color: #35A0B1;
                 font-family: Arial, Helvetica, sans-serif;
                 width: 800px;
-                display: grid;
-                grid-template-columns: 1fr 2fr;
             }
 
             .box {
-                margin-left: 20px;
-                margin-top: 20px;
+                margin: 20px;
                 width: 250px;
-                height: 250px;
+                height: 450px;
                 text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
             }
 
             img {
-                margin-top: 20px;
-                margin-bottom: 25px;
+                margin: auto;
             }
 
             .logo {
@@ -211,68 +216,68 @@
             <h1><strong>Parts of a Car</strong></h1>
         </div>
         <div class="main">
-            <div class="box">
-                <h2>Engine</h2>
-                <p>The engine is the really loud, heavy thing under the hood of the car that makes it go. It says, "VROOOOOM!"</p>
-                <div class="button">
-                    <a href="https://en.wikipedia.org/wiki/Automotive_engine
-"><button class="cta-button"><strong>More info</strong></button></a>
-                    <div class="prt particle"></div>
-                    <div class="prt particle2"></div>
-                    <div class="prt particle3"></div>
-                    <div class="prt particle4"></div>
+            <div class= "card">
+                <div class="box">
+                    <h2>Engine</h2>
+                    <p>The engine is the really loud, heavy thing under the hood of the car that makes it go. It says, "VROOOOOM!"</p>
+                    <div class="button">
+                        <a href="https://en.wikipedia.org/wiki/Automotive_engine" target="blank"><button class="cta-button"><strong>More info</strong></button></a>
+                        <div class="prt particle"></div>
+                        <div class="prt particle2"></div>
+                        <div class="prt particle3"></div>
+                        <div class="prt particle4"></div>
+                    </div>
                 </div>
-            </div>
-            <img src="https://iepieleaks.nl/wp-content/uploads/2017/11/17279-001-1400.jpg
+                <img src="https://iepieleaks.nl/wp-content/uploads/2017/11/17279-001-1400.jpg
 " width="500px">
-            <div class="box">
-                <h2>Windows</h2>
-                <p>Windows are made out of glass and allow you to see where you're driving without getting bugs in your mouth!</p>
-                <div class="button">
-                    <a href="https://en.wikipedia.org/wiki/Car_glass
-"><button class="cta-button"><strong>More info</strong></button></a>
-                    <div class="prt particle"></div>
-                    <div class="prt particle2"></div>
-                    <div class="prt particle3"></div>
-                    <div class="prt particle4"></div>
-                </div>
             </div>
-            <img src="https://www.raynofilm.com/wp-content/uploads/2016/05/shutterstock_70829215.jpg
+            <div class= "card">
+                <div class="box">
+                    <h2>Windows</h2>
+                    <p>Windows are made out of glass and allow you to see where you're driving without getting bugs in your mouth!</p>
+                    <div class="button">
+                        <a href="https://en.wikipedia.org/wiki/Car_glass" target="blank"><button class="cta-button"><strong>More info</strong></button></a>
+                        <div class="prt particle"></div>
+                        <div class="prt particle2"></div>
+                        <div class="prt particle3"></div>
+                        <div class="prt particle4"></div>
+                    </div>
+                </div>
+                <img src="https://www.raynofilm.com/wp-content/uploads/2016/05/shutterstock_70829215.jpg
 " width="500px">
-            <div class="box">
-                <h2>Doors</h2>
-                <p>Doors let you get into your car... unless you forgot your keys!</p>
-                <div class="button">
-                    <a href="https://en.wikipedia.org/wiki/Car_door
-" target="blank"><button class="cta-button"><strong>More info</strong></button></a>
-                    <div class="prt particle"></div>
-                    <div class="prt particle2"></div>
-                    <div class="prt particle3"></div>
-                    <div class="prt particle4"></div>
-                </div>
             </div>
-            <img src="https://www.legendaryautointeriors.com/wp-content/uploads/2018/09/Plymouth10-1.jpg
+            <div class= "card">
+                <div class="box">
+                    <h2>Doors</h2>
+                    <p>Doors let you get into your car... unless you forgot your keys!</p>
+                    <div class="button">
+                        <a href="https://en.wikipedia.org/wiki/Car_door" target="blank"><button class="cta-button"><strong>More info</strong></button></a>
+                        <div class="prt particle"></div>
+                        <div class="prt particle2"></div>
+                        <div class="prt particle3"></div>
+                        <div class="prt particle4"></div>
+                    </div>
+                </div>
+                <img src="https://www.legendaryautointeriors.com/wp-content/uploads/2018/09/Plymouth10-1.jpg
 " width="500px">
-            <div class="box">
-                <h2>Steering Wheel</h2>
-                <p>Steering wheels let you steer your car. They will also let you crash your car if don't hold onto it!</p>
-                <div class="button">
-                    <a href="https://en.wikipedia.org/wiki/Steering_wheel" target="blank"><button class="cta-button"><strong>More info</strong></button></a>
-                    <div class="prt particle"></div>
-                    <div class="prt particle2"></div>
-                    <div class="prt particle3"></div>
-                    <div class="prt particle4"></div>
-                </div>
             </div>
-            <img src="https://races-shop.com/326489-thickbox_default/steering-wheel-races-drift-neo-350mm-suede-90mm-deep-dish.jpg" width="500px">
+            <div class= "card">
+                <div class="box">
+                    <h2>Steering Wheel</h2>
+                    <p>Steering wheels let you steer your car. They will also let you crash your car if don't hold onto it!</p>
+                    <div class="button">
+                        <a href="https://en.wikipedia.org/wiki/Steering_wheel" target="blank"><button class="cta-button"><strong>More info</strong></button></a>
+                        <div class="prt particle"></div>
+                        <div class="prt particle2"></div>
+                        <div class="prt particle3"></div>
+                        <div class="prt particle4"></div>
+                    </div>
+                </div>
+                <img src="https://races-shop.com/326489-thickbox_default/steering-wheel-races-drift-neo-350mm-suede-90mm-deep-dish.jpg" width="500px">
+            </div>
         </div>
         <div class="logo">
             <img src="https://di-uploads-pod8.dealerinspire.com/fernandezhonda/uploads/2019/01/cars-part-faq2.jpg">
         </div>
     </body>
 </html>
-
-<!--parent bg #E0E3F0
-bg 0C2427
-txt 35A0B1
-border DA304C-->
