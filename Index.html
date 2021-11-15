@@ -10,13 +10,21 @@
                 padding: 0;
             }
 
+            .hero {
+                height: 974px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
             h1 {
+                padding: 5px 15px;
                 font-size: 100px;
                 text-align: center;
-                background-color: #0C2427;
+                background-color: #0c2427;
                 color: #35A0B1;
                 font-family: Arial, Helvetica, sans-serif;
             }
+
 
             h2 {
                 width: fit-content;
@@ -30,6 +38,10 @@
 
             body {
                 background-color: #0C2427;
+                background-image: url("https://www.anzael.com/blog/wp-content/uploads/2018/02/car-parts-at-silverlake.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
             }
 
             .main {
@@ -43,13 +55,15 @@
             }
 
             .box {
+                margin-left: 20px;
+                margin-top: 20px;
                 width: 250px;
                 height: 250px;
                 text-align: center;
             }
-            
-            
+
             img {
+                margin-top: 20px;
                 margin-bottom: 25px;
             }
 
@@ -193,7 +207,9 @@
         </style>
     </head>
     <body>
-        <h1><strong>Parts of a Car</strong></h1>
+        <div class="hero">
+            <h1><strong>Parts of a Car</strong></h1>
+        </div>
         <div class="main">
             <div class="box">
                 <h2>Engine</h2>
