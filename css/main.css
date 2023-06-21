@@ -74,6 +74,12 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+/* nav {
+    height: 500px;
+    display: flex;
+    align-items: end;
+} */
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -85,11 +91,13 @@ body {
 
 .header-container {
     border-bottom: 20px solid white;
+    font-size: 12px;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid white;
+    border-top: 5px solid #20579a;
+    
 }
 
 .header-container,
@@ -219,6 +227,10 @@ nav a:hover {
     .oldie nav a {
         margin: 0 0.7%;
     }
+
+    aside {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -258,7 +270,7 @@ nav a:hover {
 
     .main aside {
         float: right;
-        width: 28%;
+        width: 40%;
     }
 }
 
@@ -271,6 +283,10 @@ nav a:hover {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+    
+    aside {
+        width: 40%;
     }
 }
 
