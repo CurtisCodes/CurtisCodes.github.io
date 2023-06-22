@@ -7,6 +7,26 @@ html {
     line-height: 1.4;
 }
 
+.container {
+    display: none;
+    position: absolute;
+    background-color: white;
+    max-width: 480px;
+}
+
+.time {
+    display: none;
+}
+
+.firstSection {
+    margin: 0 auto 200px;
+}
+
+.button {
+    width: 150px;
+    margin: 0 auto;
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -64,6 +84,7 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+
 
 
 /* ===== Initializr Styles ==================================================
@@ -334,9 +355,9 @@ nav a:hover {
     clear: both;
 }
 
-.clearfix {
+/* .clearfix {
     *zoom: 1;
-}
+} */
 
 /* ==========================================================================
    Print styles
