@@ -87,6 +87,10 @@ li img {
 }
 
 .main-container {
+    border-bottom: 2px ridge black;
+}
+
+.main {
     margin: 30px 10%;
 }
 
@@ -153,7 +157,6 @@ li img {
 
 .main footer {
     margin-top: 50px;
-    border-top: 2px ridge black;
 }
 
 .main footer p {
