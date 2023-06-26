@@ -19,6 +19,7 @@ html {
     border-bottom: 2px ridge black;
     width: 100%;
     position: fixed;
+    z-index: 4;
 }
 
 .bar {
@@ -29,6 +30,7 @@ html {
     justify-content: space-between;
     margin: 0 10%;
     padding: none;
+    color: #006fd8;
 }
 
 .title {
@@ -38,12 +40,13 @@ html {
 }
 
 .hero-container {
-    padding-top: 45px;
+    padding-top: 125px;
     border-bottom: 2px ridge black;
     width: 100%;
-    background-image: url("../img/pp.jpg");
+    height: 600px;
+    background-image: url("../img/hero-pic.jpg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 
 .hero {
@@ -53,12 +56,8 @@ html {
 }
 
 .hero-greet {
-    margin: 150px 0 0 50px;
+    /* margin: 50px 0 0 50px; */
     font-weight: 5;
-}
-
-.contact-button {
-    margin: 50px;
 }
 
 h1 {
@@ -115,6 +114,8 @@ li img {
     background-color: #222;
     color: #d1d3d4;
     border-radius: 15px 15px 0 0;
+    box-shadow: #006fd8 5px 5px;
+    z-index: -1;
 }
 
 .js-projects-display {
@@ -127,6 +128,7 @@ li img {
     color: #d1d3d4;
     border-radius: 15px;
     margin-bottom: 50px;
+    box-shadow: #006fd8 5px 5px;
 }
 
 .reviews-container{
@@ -162,6 +164,143 @@ li img {
 .main footer p {
     margin: 20px 20% 0;
 }
+
+/* Button Animation */
+
+.contact-button {
+    margin: 50px;
+    width: 180px;
+    height: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #00e1ff;
+    background-color: #26717c;
+    background-image: linear-gradient(315deg, #006fd8 0%, #ffffff 75%);
+    color: #006fd8;
+    border: 0;
+    margin: 0px auto;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: scale(1.3);
+    /* box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px; */
+    border-radius: 50px;
+}
+
+.prt {
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.contact-button .prt {
+    opacity: 1;
+}
+
+.particle {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #006fd8;
+    position: absolute;
+    top: -40px;
+    left: 15px;
+    animation: rotate-y 2s infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+}
+
+/* .particle2 {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #00D8D5;
+    position: absolute;
+    top: -40px;
+    left: 15px;
+    animation: rotate-y 2s infinite;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+}
+
+.particle3 {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #00D8D5;
+    position: absolute;
+    top: -40px;
+    left: 15px;
+    animation: rotate-y 2s infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+}
+
+.particle4 {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #00D8D5;
+    position: absolute;
+    top: -40px;
+    left: 15px;
+    animation: rotate-y 2s infinite;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+} */
+
+@keyframes rotate-y {
+    0% {
+        position: -20px;
+        left: 15px;
+        z-index: 3;
+    }
+
+    50% {
+        top: 80px;
+        left: 165px;
+        z-index: 3;
+        background: #ffffff;
+
+    }
+
+    51% {
+        z-index: 1;
+    }
+
+    100% {
+        z-index: 1;
+        left: 15px;
+        background: #006fd8;
+    }
+}
+
 
 /* ==========================================================================
    Media Queries
