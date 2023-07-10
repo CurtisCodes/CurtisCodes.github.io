@@ -142,7 +142,7 @@ nav {
     width: 420px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background-color: #222;
     color: #d1d3d4;
     border-radius: 15px;
@@ -153,18 +153,37 @@ nav {
 /* weather app */
 
 .weather-container{
-    width: 400px;
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+}
+.weather-container h3{
+    margin: 1.5rem;
+    font-size: 40px;
+}
+.weather-container input{
+    padding: 20px 10%;
+    width: 80%;
+    border-radius: 5px;
 }
 .icon{
     position: relative;
+    background-color: #d1d3d4;
     top: -50px;
     border-radius: 50%;
     width: 100px;
-    margin-bottom: -50px;
+    margin: 0 auto -50px;
 }
-.card{
+.card {
     background-color: #569c84;
-    margin-top: 60px;
+    margin: 60px auto;
+    padding: 30px 0;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.d-none {
+    display: none;
 }
 
 .time{
@@ -177,8 +196,8 @@ nav {
     width: 400px;
 }
 
-input[type=text],
-input[type=text]:focus {
+.todo-container input[type=text],
+.todo-container input[type=text]:focus {
     color: #fff;
     border: none;
     background: #d1d3d4;
@@ -200,10 +219,15 @@ input[type=text]:focus {
 /* reviews section */
 
 .reviews-container{
-    margin-top: 30px;
+    margin: 30px 10%;
     width: 60%;
     box-shadow: #006fd8 5px 5px;
     border-radius: 15px;
+}
+
+.reviews-container p {
+    font-size: .75em;
+    padding: 10px;
 }
 
 .reviews-right {
@@ -316,38 +340,6 @@ input[type=text]:focus {
     animation-timing-function: ease-in-out;
     z-index: 3;
 }
-/*
-.particle3 {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #00D8D5;
-    position: absolute;
-    top: -40px;
-    left: 15px;
-    animation: rotate-y 2s infinite;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-    z-index: 3;
-}
-
-.particle4 {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #00D8D5;
-    position: absolute;
-    top: -40px;
-    left: 15px;
-    animation: rotate-y 2s infinite;
-    animation-delay: 1.5s;
-    animation-timing-function: ease-in-out;
-    z-index: 3;
-} */
 
 @keyframes rotate-y {
     0% {
@@ -472,6 +464,11 @@ input[type=text]:focus {
 .reviews-left {
     display: flex;
     justify-content: center;
+}
+
+.reviews-left .reviews-container .reviews-img-and {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .main footer p {

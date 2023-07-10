@@ -7,13 +7,13 @@ const toBeReplaced = document.querySelector('.toBeReplaced');
 // weather app
 
 const weatherHtml = 
-`<div class="weather-container my-5 mx-au">
-    <h1 class="text-center my-4">Weather App</h1>
-    <form class="change-location my-4 text-center">
+`<div class="weather-container">
+    <h3>Weather App</h3>
+    <form class="change-location my-4">
         <label for="city">Enter a location for weather information</label>
         <input type="text" name="city" class="form-control p-4" style="box-shadow: none;">
     </form>
-    <div class="card shadow-lg rounded d-none">
+    <div class="card d-none">
         <img src="https://via.placeholder.com/400x300" class="time card-img-top">
         <div class="icon bg-light mx-auto text-center">
             <img src="" alt="">
