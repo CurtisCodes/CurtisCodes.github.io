@@ -106,28 +106,28 @@ const todosHTML =
 `<div class="todo-container">
     <header class="text-center text-light my-4">
         <h3 class="mb-4">Todo List</h3>
+        <form class="add text-center my-4">
+            <label class="text-light">Add new todo</label>
+            <input type="text" class="form-control m-auto" name="add">
+        </form>
         <form class="search">
             <input type="text" class="form-control m-auto" name="search" placeholder="search todos">
         </form>
     </header>
     <ul class="list-group todos mx-auto">
         <li class="text-light list-group-item d-flex justify-content-between align-items-center">
-            <span>Eat flower</span>
+            <span>Buy groceries</span>
             <i class="far fa-trash-alt delete"></i>
         </li>
         <li class="text-light list-group-item d-flex justify-content-between align-items-center">
-            <span>Eat mushroom</span>
+            <span>Mop the floor</span>
             <i class="far fa-trash-alt delete"></i>
         </li>
         <li class="text-light list-group-item d-flex justify-content-between align-items-center">
-            <span>Smash turtles</span>
+            <span>Sweep the leg</span>
             <i class="far fa-trash-alt delete"></i>
         </li>
     </ul>
-    <form class="add text-center my-4">
-        <label class="text-light">Add new todo</label>
-        <input type="text" class="form-control m-auto" name="add">
-    </form>
 </div>`
 
 todosButton.addEventListener('click', e => {
@@ -188,26 +188,26 @@ todosButton.addEventListener('click', e => {
 
 // digital clock
 
-clockHtml = `<div class="clock"></div>`;
+// clockHtml = `<div class="clock"></div>`;
 
-clockButton.addEventListener('click', e => {
-    e.preventDefault();
-    jsDisplay.innerHTML = clockHtml;
+// clockButton.addEventListener('click', e => {
+//     e.preventDefault();
+//     jsDisplay.innerHTML = clockHtml;
 
-    const clock = document.querySelector('.clock');
-    const tick = () => {
-    const now = new Date();
-    const h = now.getHours();
-    const m = now.getMinutes();
-    const s = now.getSeconds();
-    const html = `
-        <span>${h}</span> :
-        <span>${m}</span> :
-        <span>${s}</span>
-    `;
-    clock.innerHTML = html;
+//     const clock = document.querySelector('.clock');
+//     const tick = () => {
+//     const now = new Date();
+//     const h = now.getHours();
+//     const m = now.getMinutes();
+//     const s = now.getSeconds();
+//     const html = `
+//         <span>${h}</span> :
+//         <span>${m}</span> :
+//         <span>${s}</span>
+//     `;
+//     clock.innerHTML = html;
 
-};
+// };
 
-setInterval(tick, 1000);
-});
+// setInterval(tick, 1000);
+// });

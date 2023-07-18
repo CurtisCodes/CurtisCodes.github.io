@@ -138,16 +138,25 @@ nav {
 }
 
 .js-projects-display {
-    height: 620px;
+    /* height: 620px; */
     width: 420px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     /* align-items: center; */
     background-color: #222;
     color: #d1d3d4;
     border-radius: 15px;
     margin-bottom: 50px;
     box-shadow: #006fd8 5px 5px;
+}
+
+.js-projects-display span {
+    margin: auto auto;
+}
+
+.toBeReplaced {
+    display: inline-block;
+    height: 250px;
 }
 
 /* weather app */
@@ -166,6 +175,7 @@ nav {
     width: 80%;
     border-radius: 5px;
 }
+
 .icon{
     position: relative;
     background-color: #d1d3d4;
@@ -192,8 +202,34 @@ nav {
 
 /* todo app */
 
-.todo-container {
+/* .todo-container {
     width: 400px;
+} */
+
+.todo-container h3 {
+    font-size: 40px;
+    margin-top: 48px;
+}
+
+.todo-container header {
+    margin: 20px;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+}
+
+.add input{
+    padding: 20px 10%;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.search input{
+    padding: 5px 2%;
+    width: 50%;
+    border-radius: 5px;
 }
 
 .todo-container input[type=text],
@@ -204,8 +240,24 @@ nav {
     max-width: 400px;
 }
 
+.todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
 .todos li {
     background: #423a6f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px auto;
+    width: 40%;
 }
 
 .delete {
@@ -420,7 +472,7 @@ nav {
 }
 
 .js-projects-display {
-    height: 620px;
+    /* height: 620px; */
     width: 90%;
     display: flex;
     justify-content: center;
