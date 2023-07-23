@@ -1,4 +1,5 @@
 let storeButton = document.querySelector('.store-button');
+let virtualStore = document.querySelector('.virtual-store');
 
 let shopItemsData = [
     {
@@ -33,7 +34,7 @@ let shopItemsData = [
 ];
 
 let shopHtml = `
-    <div class="navbar">
+     <div class="navbar">
         <a href="index.html">
             <h2>Virtual Store</h2>
         </a>
@@ -120,7 +121,7 @@ storeButton.addEventListener('click', e => {
                     </div>
                 </div>
             </div>
-        `;
+            `;
         }).join(""));
     };
 

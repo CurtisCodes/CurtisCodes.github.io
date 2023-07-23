@@ -13,7 +13,10 @@
         <link rel="stylesheet" href="css/storeStyles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -58,7 +61,7 @@
             <div class="main inner-size">
                 <header>
                     <h2 class="margin-left-5-percent">A Web Developer's Portfolio</h2>
-                    <p>I built this page with html, css and vanilla javascript. Please select one of the javascript projects below to ascertain my skillset. And thank you for visiting my portfolio!</p>
+                    <p>I built this page using html, css and javascript. Please select one of the javascript projects below to ascertain my skillset. And thank you for visiting my portfolio!</p>
                     <!-- <p>Email me at curtis@curtisperdue.dev</p> -->
                 </header>
                 <section>
@@ -70,7 +73,22 @@
                             <button class="store-button">Virtual Store</button>
                         </div>
                         <div id="js-projects-display" class="js-projects-display">
-                            <span class="toBeReplaced">Click one of the above projects to display here.</span>
+                            <div class="virtual-store d-none">
+                                <div class="navbar">
+                                    <a href="index.html">
+                                        <h2>Virtual Store</h2>
+                                    </a>
+                                    <div class="cart">
+                                        <i class="bi bi-cart4"></i>
+                                        <div id="cartAmount" class="cartAmount">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-container">
+                                <div class="shop" id="shop"></div>
+                            </div>
+                            <div class="weather-and-todos-display"></div>                        
+                            <p class="toBeReplaced">Click one of the above projects to display here.</p>
                         </div>
                     </div>
                 </section>
