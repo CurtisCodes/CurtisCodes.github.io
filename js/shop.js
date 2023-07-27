@@ -267,4 +267,5 @@ cartButton.addEventListener('click', e => {
     shop.classList.add('d-none');
     cartContainer.classList.remove('d-none');
     generateCartItems();
+    totalAmount();
     });

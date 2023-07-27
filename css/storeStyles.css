@@ -32,6 +32,10 @@ a {
     font-size: 40px;
 }
 
+.shop-container {
+    margin-bottom: 30px;
+}
+
 .cart {
     background-color: #fff;
     color: #212529;
