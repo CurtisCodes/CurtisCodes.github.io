@@ -61,7 +61,7 @@
             <div class="main inner-size">
                 <header>
                     <h2 class="margin-left-5-percent">A Web Developer's Portfolio</h2>
-                    <p>I built this page using html, css and javascript. Please select one of the javascript projects below to ascertain my skillset. And thank you for visiting my portfolio!</p>
+                    <p>I built this page using html, css and javascript. Please select one of the projects below to ascertain my skillset. And thank you for visiting my portfolio!</p>
                     <!-- <p>Email me at curtis@curtisperdue.dev</p> -->
                 </header>
                 <section>
@@ -73,21 +73,27 @@
                             <button class="store-button">Virtual Store</button>
                         </div>
                         <div id="js-projects-display" class="js-projects-display">
-                            <div class="virtual-store d-none">
+                            <div class="shop-container d-none">
                                 <div class="navbar">
-                                    <a href="index.html">
-                                        <h2>Virtual Store</h2>
-                                    </a>
-                                    <div class="cart">
-                                        <i class="bi bi-cart4"></i>
-                                        <div id="cartAmount" class="cartAmount">0</div>
+                                    <div class="shopButton">
+                                        <h2>Shopping Cart</h2>
                                     </div>
+                                    <div class="cartButton">
+                                        <div class="cart">
+                                            <i class="bi bi-cart4"></i>
+                                            <div id="cartAmount" class="cartAmount">0</div>
+                                        </div>
+                                    </div>        
                                 </div>
-                            </div>
-                            <div class="shop-container">
                                 <div class="shop" id="shop"></div>
+                                <div class="cart-container d-none">
+                                    <div id="label" class="text-center"></div>
+                                    <div id="shopping-cart" class="shopping-cart"></div>
+                                </div>
+    
                             </div>
-                            <div class="weather-and-todos-display"></div>                        
+                            <div class="todo-and-weather"></div>
+
                             <p class="toBeReplaced">Click one of the above projects to display here.</p>
                         </div>
                     </div>

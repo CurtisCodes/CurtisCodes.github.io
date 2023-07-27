@@ -15,7 +15,7 @@ html {
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 .inner-size {
@@ -97,6 +97,7 @@ nav {
     font-size: 24px;
     margin: 0;
     padding-left: 10%;
+    text-indent: -30px;
     /* font-weight: 100; */
 }
 
@@ -178,6 +179,8 @@ nav {
     padding: 20px 10%;
     width: 80%;
     border-radius: 5px;
+    background-color: #d1d3d4;
+
 }
 
 .icon{
@@ -212,7 +215,8 @@ nav {
 }
 
 .todo-container header {
-    margin: 20px;
+    margin: auto 20px;
+    width: 90%;
 }
 
 .add {

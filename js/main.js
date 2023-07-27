@@ -3,6 +3,7 @@ const todosButton = document.querySelector('.todo-list-button');
 const clockButton = document.querySelector('.digital-clock-button');
 const jsDisplay = document.querySelector('.js-projects-display');
 const toBeReplaced = document.querySelector('.toBeReplaced');
+const todoAndWeather = document.querySelector('.todo-and-weather');
 
 // weather app
 
@@ -33,7 +34,10 @@ const weatherHtml =
 
 weatherButton.addEventListener('click', e => {
     e.preventDefault();
-    jsDisplay.innerHTML = weatherHtml;
+    todoAndWeather.innerHTML = weatherHtml;
+    shopContainer.classList.add('d-none');
+    toBeReplaced.classList.add('d-none');
+
     const cityForm = document.querySelector('form');
     const card = document.querySelector('.card');
     const details = document.querySelector('.details');
@@ -98,8 +102,6 @@ weatherButton.addEventListener('click', e => {
 
 
 
-
-
 //todos
 
 const todosHTML =     
@@ -132,7 +134,9 @@ const todosHTML =
 
 todosButton.addEventListener('click', e => {
     e.preventDefault();
-    jsDisplay.innerHTML = todosHTML;
+    todoAndWeather.innerHTML = todosHTML;
+    shopContainer.classList.add('d-none');
+    toBeReplaced.classList.add('d-none');
 
     const addForm = document.querySelector('.add');
     const list = document.querySelector('.todos');
@@ -185,29 +189,3 @@ todosButton.addEventListener('click', e => {
     });
 
 });
-
-// digital clock
-
-// clockHtml = `<div class="clock"></div>`;
-
-// clockButton.addEventListener('click', e => {
-//     e.preventDefault();
-//     jsDisplay.innerHTML = clockHtml;
-
-//     const clock = document.querySelector('.clock');
-//     const tick = () => {
-//     const now = new Date();
-//     const h = now.getHours();
-//     const m = now.getMinutes();
-//     const s = now.getSeconds();
-//     const html = `
-//         <span>${h}</span> :
-//         <span>${m}</span> :
-//         <span>${s}</span>
-//     `;
-//     clock.innerHTML = html;
-
-// };
-
-// setInterval(tick, 1000);
-// });
