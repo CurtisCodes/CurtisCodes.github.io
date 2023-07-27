@@ -259,6 +259,7 @@ storeButton.addEventListener('click', e => {
     cartContainer.classList.add('d-none');
     todoAndWeather.innerHTML = ``;
     toBeReplaced.classList.add('d-none');
+    generateShop();
     });
 
 cartButton.addEventListener('click', e => {

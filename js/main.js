@@ -100,8 +100,6 @@ weatherButton.addEventListener('click', e => {
     });
 });
 
-
-
 //todos
 
 const todosHTML =     
