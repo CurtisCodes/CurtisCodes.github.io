@@ -4,6 +4,15 @@ const clockButton = document.querySelector('.digital-clock-button');
 const jsDisplay = document.querySelector('.js-projects-display');
 const toBeReplaced = document.querySelector('.toBeReplaced');
 const todoAndWeather = document.querySelector('.todo-and-weather');
+const contactButton = document.querySelector('.contact-button');
+const contactForm = document.querySelector('#contact-form');
+
+// contact me button
+
+contactButton.addEventListener('click', e => {
+    e.preventDefault();
+    contactForm.classList.toggle('d-none');
+});
 
 // weather app
 
@@ -16,10 +25,10 @@ const weatherHtml =
     </form>
     <div class="card d-none">
         <img src="https://via.placeholder.com/400x300" class="time card-img-top">
-        <div class="icon bg-light mx-auto text-center">
+        <div class="weatherIcon bg-light mx-auto text-center">
             <img src="" alt="">
         </div>
-        <div class="text-muted text-uppercase text-center details">
+        <div class="text-muted text-uppercase text-center weatherDetails">
             <h5 class="my-3">City Name</h5>
             <h5 class="my-3">Country</h5>
             <div class="my-3">Weather Condition</div>
@@ -38,21 +47,21 @@ weatherButton.addEventListener('click', e => {
     shopContainer.classList.add('d-none');
     toBeReplaced.classList.add('d-none');
 
-    const cityForm = document.querySelector('form');
+    const cityForm = document.querySelector('.weather-container form');
     const card = document.querySelector('.card');
-    const details = document.querySelector('.details');
+    const weatherDetails = document.querySelector('.weatherDetails');
     const time = document.querySelector('img.time');
-    const icon = document.querySelector('.icon img');
-    const updateUI = (data) => {
+    const weatherIcon = document.querySelector('.weatherIcon img');
+    const updateUI = (weatherData) => {
 
         // non-destructured properties
-        // const cityDets = data.cityDets;
-        // const weather = data.weather;
+        // const cityDets = weatherData.cityDets;
+        // const weather = weatherData.weather;
 
         // destructured properties
-        const { cityDets, weather } = data;
+        const { cityDets, weather } = weatherData;
 
-        details.innerHTML = `
+        weatherDetails.innerHTML = `
             <h5 class="my-3">${cityDets.EnglishName}, ${cityDets.AdministrativeArea.ID}</h5>
             <h4 class="my-2 fs-2">${cityDets.Country.LocalizedName}</h4>
             <div class="my-3">${weather.WeatherText}</div>
@@ -65,7 +74,7 @@ weatherButton.addEventListener('click', e => {
         //update the night/day & icon images
 
         const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
-        icon.setAttribute('src', iconSrc);
+        weatherIcon.setAttribute('src', iconSrc);
 
         let timeSrc = weather.IsDayTime ? 'img/day.svg' : 'img/night.svg';
         time.setAttribute('src', timeSrc);
@@ -74,7 +83,7 @@ weatherButton.addEventListener('click', e => {
         if(card.classList.contains('d-none')){
             card.classList.remove('d-none');
         };
-        console.log(data);
+        console.log(weatherData);
     };
 
     const updateCity = async (city) => {
@@ -95,7 +104,7 @@ weatherButton.addEventListener('click', e => {
 
         //update the ui with new city
         updateCity(city)
-            .then(data => updateUI(data))
+            .then(weatherData => updateUI(weatherData))
             .catch(err => console.log(err));
     });
 });
@@ -110,8 +119,8 @@ const todosHTML =
             <label class="text-light">Add new todo</label>
             <input type="text" class="form-control m-auto" name="add">
         </form>
-        <form class="search">
-            <input type="text" class="form-control m-auto" name="search" placeholder="search todos">
+        <form class="todo-search">
+            <input type="text" class="form-control m-auto" name="todo-search" placeholder="search todos">
         </form>
     </header>
     <ul class="list-group todos mx-auto">
@@ -138,7 +147,8 @@ todosButton.addEventListener('click', e => {
 
     const addForm = document.querySelector('.add');
     const list = document.querySelector('.todos');
-    const search = document.querySelector('.search input');
+    const todoSearch = document.querySelector('.todo-search input');
+    const todoSearchForm = document.querySelector('.todo-search');
 
     const generateTemplate = todo => {
         const html = `
@@ -181,8 +191,12 @@ todosButton.addEventListener('click', e => {
 
     // keyup
 
-    search.addEventListener('keyup', () => {
-        const term = search.value.trim().toLowerCase();
+    todoSearchForm.addEventListener('submit', e => {
+        e.preventDefault();
+    });
+
+    todoSearch.addEventListener('keyup', () => {
+        const term = todoSearch.value.trim().toLowerCase();
         filterTodos(term);
     });
 

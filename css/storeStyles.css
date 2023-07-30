@@ -18,9 +18,9 @@ a {
 } 
 
 .navbar {
-    background-color: #212529;
+    background-color: #222;
     border-radius: 15px;
-    color: #fff;
+    color: #d1d3d4;
     padding: 48px 30px 25px;
     display: flex;
     justify-content: space-between;
@@ -37,8 +37,8 @@ a {
 }
 
 .cart {
-    background-color: #fff;
-    color: #212529;
+    background-color: #d1d3d4;
+    color: #222;
     padding: 5px;
     font-size: 30px;
     border-radius: 4px;
@@ -48,7 +48,7 @@ a {
 .cartAmount {
     font-size: 16px;
     background-color: red;
-    color: #fff;
+    color: #d1d3d4;
     position: absolute;
     top: -10px;
     right: -10px;
@@ -73,7 +73,7 @@ a {
 }
 
 .shop-item {
-    border: 2px solid white;
+    border: 2px solid #d1d3d4;
     border-radius: 4px;
 }
 
@@ -114,14 +114,17 @@ a {
 
 .text-center {
     text-align: center;
-    margin: 20px;
+}
+
+#label {
+    margin-bottom: 15px;
 }
 
 .homeBtn,
 .checkout,
 .removeAll {
-    background-color: #212529;
-    color: white;
+    background-color: #222;
+    color: #d1d3d4;
     border: none;
     padding: 6px;
     border-radius: 3px;
@@ -146,7 +149,7 @@ a {
 /* style rules for cart item */
 
 .cart-item{
-    border: 2px solid white;
+    border: 2px solid #d1d3d4;
     border-radius: 5px;
     display: flex;
 }
@@ -172,7 +175,7 @@ a {
 
 .cart-item-price {
     background-color: #212;
-    color: white;
+    color: #d1d3d4;
     border-radius: 4px;
     padding: 3px 6px;
 }
