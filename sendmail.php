@@ -1,3 +1,5 @@
+<?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(
         !empty($_POST['name'])
@@ -6,13 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ){
         $name = $_POST["name"];
         $email = $_POST["email"];
-        $phone = $_POST["phone"];
         $message = $_POST["message"];
 
 
-        $to = "your@email.com";
+        $to = "curtis@curtisperdue.dev";
         $subject = "New Contact Form Submission";
-        $body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nMessage: {$message}";
+        $body = "Name: {$name}\nEmail: {$email}\nMessage: {$message}";
         $headers = "From: {$email}";
 
 
@@ -23,3 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
+
+
+mail($to,$subject,$message,$headers);
+
+ ?>

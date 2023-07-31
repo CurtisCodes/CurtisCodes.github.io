@@ -33,21 +33,6 @@ let shopItemsData = [
     }
 ];
 
-let shopHtml = `
-     <div class="navbar">
-        <a href="index.html">
-            <h2>Virtual Store</h2>
-        </a>
-        <div class="cart">
-            <i class="bi bi-cart4"></i>
-            <div id="cartAmount" class="cartAmount">0</div>
-        </div>
-    </div>
-    <div class="shop-container">
-        <div class="shop" id="shop"></div>
-    </div>
-`;
-
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 let update = (id) => {
