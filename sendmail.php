@@ -1,5 +1,11 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+
+require 'C:\xampp\composer\vendor\autoload.php';
+
+$email = new PHPMailer(TRUE);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(
         !empty($_POST['name'])

@@ -6,6 +6,7 @@ const toBeReplaced = document.querySelector('.toBeReplaced');
 const todoAndWeather = document.querySelector('.todo-and-weather');
 const contactButton = document.querySelector('.contact-button');
 const contactForm = document.querySelector('#contact-form');
+const ctaButton = document.querySelector('.cta-button');
 
 // contact me button
 
@@ -200,4 +201,8 @@ todosButton.addEventListener('click', e => {
         filterTodos(term);
     });
 
+});
+
+ctaButton.addEventListener('submit', e => {
+    e.preventDefault();
 });
